@@ -22,12 +22,13 @@ const connect = async () => {
 mongoose.connection.on('disconnected', () => {
 	console.log('mongodb disconnected');
 });
+
 mongoose.connection.on('connected', () => {
 	console.log('mongodb connected');
 });
 
 // middleware
-app.use(cookieParser())
+app.use(cookieParser());
 app.use(express.json());
 
 app.use('/api/auth', authRouter);
