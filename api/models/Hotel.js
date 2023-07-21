@@ -43,6 +43,7 @@ const HotelSchema = new mongoose.Schema({
 	cheapestPrice: {
 		type: Number,
 		require: true,
+		default: 100,
 	},
 	featured: {
 		type: Boolean,

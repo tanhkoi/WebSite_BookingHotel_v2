@@ -9,11 +9,7 @@ $ git clone https://github.com/tanhkoi/WebSite_BookingHotel_v2.git
 - Enter in directory:
 $ cd WebSite_BookingHotel_v2
 
-- For install dependencies:
-$ npm i
-
-- Execute application:
-$ npm run start
+- waitting for update ...
 
 - Open your browser in:
 http://localhost:3000/

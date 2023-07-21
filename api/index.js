@@ -47,7 +47,7 @@ app.use((err, req, res, next) => {
 	});
 });
 
-app.listen(8000, () => {
+app.listen(8800, () => {
 	connect();
-	console.log('connected to backend http://localhost:8000/');
+	console.log('connected to backend http://localhost:8800/');
 });
