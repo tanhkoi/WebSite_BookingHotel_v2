@@ -5,46 +5,45 @@ const Footer = () => {
 		<div className="footer">
 			<div className="fLists">
 				<ul className="fList">
-					<li className="fListItem">Countries</li>
-					<li className="fListItem">Regions</li>
-					<li className="fListItem">Cities</li>
-					<li className="fListItem">Districts</li>
-					<li className="fListItem">Airports</li>
-					<li className="fListItem">Hotels</li>
+					<li className="fListItem">Các quốc gia</li>
+					<li className="fListItem">Các vùng</li>
+					<li className="fListItem">Các thành phố</li>
+					<li className="fListItem">Các quận</li>
+					<li className="fListItem">Sân bay</li>
+					<li className="fListItem">Các khách sạn</li>
 				</ul>
 				<ul className="fList">
-					<li className="fListItem">Homes </li>
-					<li className="fListItem">Apartments </li>
-					<li className="fListItem">Resorts </li>
-					<li className="fListItem">Villas</li>
-					<li className="fListItem">Hostels</li>
-					<li className="fListItem">Guest houses</li>
+					<li className="fListItem">Các căn hộ </li>
+					<li className="fListItem">Các chỗ ở</li>
+					<li className="fListItem">Các khu nghỉ mát</li>
+					<li className="fListItem">Các biệt thự</li>
+					<li className="fListItem">Các nhà trọ</li>
+					<li className="fListItem">Các nhà khách</li>
 				</ul>
 				<ul className="fList">
-					<li className="fListItem">Unique places to stay </li>
-					<li className="fListItem">Reviews</li>
-					<li className="fListItem">Unpacked: Travel articles </li>
-					<li className="fListItem">Travel communities </li>
-					<li className="fListItem">Seasonal and holiday deals </li>
+					<li className="fListItem">Những nơi lưu trú độc đáo</li>
+					<li className="fListItem">Những đánh giá</li>
+					<li className="fListItem">Khám phá: Các bài viết du lịch</li>
+					<li className="fListItem">Các cộng đồng du lịch</li>
+					<li className="fListItem">Các ưu đãi theo mùa và dịp lễ</li>
 				</ul>
 				<ul className="fList">
-					<li className="fListItem">Car rental </li>
-					<li className="fListItem">Flight Finder</li>
-					<li className="fListItem">Restaurant reservations </li>
-					<li className="fListItem">Travel Agents </li>
+					<li className="fListItem">Thuê xe ô tô</li>
+					<li className="fListItem">Tìm chuyến bay</li>
+					<li className="fListItem">Đặt chỗ nhà hàng</li>
+					<li className="fListItem">Đại lý du lịch</li>
 				</ul>
 				<ul className="fList">
-					<li className="fListItem">Curtomer Service</li>
-					<li className="fListItem">Partner Help</li>
-					<li className="fListItem">Careers</li>
-					<li className="fListItem">Sustainability</li>
-					<li className="fListItem">Press center</li>
-					<li className="fListItem">Safety Resource Center</li>
-					<li className="fListItem">Investor relations</li>
-					<li className="fListItem">Terms & conditions</li>
+					<li className="fListItem">Dịch vụ khách hàng</li>
+					<li className="fListItem">Hỗ trợ đối tác</li>
+					<li className="fListItem">Cơ hội nghề nghiệp</li>
+					<li className="fListItem">Bền vững</li>
+					<li className="fListItem">Trung tâm báo chí</li>
+					<li className="fListItem">Trung tâm tài nguyên an toàn</li>
+					<li className="fListItem">Mối quan hệ nhà đầu tư</li>
+					<li className="fListItem">Điều khoản và điều kiện</li>
 				</ul>
 			</div>
-			<div className="fText">Copyright © 2022 Lamabooking.</div>
 		</div>
 	);
 };

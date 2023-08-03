@@ -40,14 +40,14 @@ const HotelSchema = new mongoose.Schema({
 	rooms: {
 		type: [String],
 	},
+	featured: {
+		type: Boolean,
+		default: false,
+	},
 	cheapestPrice: {
 		type: Number,
 		require: true,
 		default: 100,
-	},
-	featured: {
-		type: Boolean,
-		default: false,
 	},
 });
 

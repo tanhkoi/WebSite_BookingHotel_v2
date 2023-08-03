@@ -15,7 +15,6 @@ import Reserve from '../../components/reserve/Reserve';
 const Hotel = () => {
 	const location = useLocation();
 	const id = location.pathname.split('/')[2];
-	console.log(id);
 	const [slideNumber, setSlideNumber] = useState(0);
 	const [open, setOpen] = useState(false);
 	const [openModal, setOpenModal] = useState(false);
@@ -65,7 +64,7 @@ const Hotel = () => {
 			<Navbar />
 			<Header type="list" />
 			{loading ? (
-				'loading'
+				'Đang tải...'
 			) : (
 				<div className="hotelContainer">
 					{open && (
@@ -79,14 +78,14 @@ const Hotel = () => {
 						</div>
 					)}
 					<div className="hotelWrapper">
-						<button className="bookNow">Reserve or Book Now!</button>
+						<button className="bookNow">Đặt hoặc Đặt ngay!</button>
 						<h1 className="hotelTitle">{data.name}</h1>
 						<div className="hotelAddress">
 							<FontAwesomeIcon icon={faLocationDot} />
 							<span>{data.address}</span>
 						</div>
-						<span className="hotelDistance">Excellent location – {data.distance}m from center</span>
-						<span className="hotelPriceHighlight">Book a stay over ${data.cheapestPrice} at this property and get a free airport taxi</span>
+						<span className="hotelDistance">Vị trí tuyệt vời - Cách trung tâm {data.distance}m</span>
+						<span className="hotelPriceHighlight">Đặt lưu trú trên ${data.cheapestPrice} tại khách sạn này và nhận miễn phí taxi từ sân bay</span>
 						<div className="hotelImages">
 							{data.photos?.map((photo, i) => (
 								<div className="hotelImgWrapper" key={i}>
@@ -100,20 +99,20 @@ const Hotel = () => {
 								<p className="hotelDesc">{data.desc}</p>
 							</div>
 							<div className="hotelDetailsPrice">
-								<h1>Perfect for a {days}-night stay!</h1>
-								<span>Located in the real heart of Krakow, this property has an excellent location score of 9.8!</span>
+								<h1>Hoàn hảo cho {days} đêm lưu trú!</h1>
+								<span>Nằm ở trung tâm thật sự của Krakow, khách sạn này có điểm đánh giá vị trí tuyệt vời là 9.8!</span>
 								<h2>
-									<b>${days * data.cheapestPrice * options.room}</b> ({days} nights)
+									<b>${days * data.cheapestPrice * options.room}</b> ({days} đêm)
 								</h2>
-								<button onClick={handleClick}>Reserve or Book Now!</button>
+								<button onClick={handleClick}>Đặt hoặc Đặt ngay!</button>
 							</div>
 						</div>
 					</div>
 					<MailList />
 					<Footer />
 				</div>
-			)} 
-			{openModal && <Reserve setOpen={setOpenModal} hotelID={id} />}
+			)}
+			{openModal && <Reserve setOpen={setOpenModal} hotelId={id} />}
 		</div>
 	);
 };

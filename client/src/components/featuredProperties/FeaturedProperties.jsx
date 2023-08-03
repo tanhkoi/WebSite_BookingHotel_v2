@@ -15,11 +15,11 @@ const FeaturedProperties = () => {
 							<img src={item.photos[0]} alt="" className="fpImg" />
 							<span className="fpName">{item.name}</span>
 							<span className="fpCity">{item.city}</span>
-							<span className="fpPrice">Starting from ${item.cheapestPrice}</span>
+							<span className="fpPrice">Chỉ từ {item.cheapestPrice} VND</span>
 							{item.rating && (
 								<div className="fpRating">
 									<button>{item.rating}</button>
-									<span>Excellent</span>
+									<span>Tuyệt vời</span>
 								</div>
 							)}
 						</div>

@@ -11,24 +11,24 @@ const Featured = () => {
 				<>
 					{' '}
 					<div className="featuredItem">
-						<img src="https://cf.bstatic.com/xdata/images/city/max500/957801.webp?k=a969e39bcd40cdcc21786ba92826063e3cb09bf307bcfeac2aa392b838e9b7a5&o=" alt="" className="featuredImg" />
+						<img src="https://img.freepik.com/free-photo/dusk-business-night-sea-architecture_1417-55.jpg?size=626&ext=jpg&ga=GA1.2.1289487096.1690981427&semt=sph" alt="" className="featuredImg" />
 						<div className="featuredTitles">
 							<h1>Sai gon</h1>
-							<h2>{data[0]} properties</h2>
+							<h2>Hiện có {data[0]} địa điểm</h2>
 						</div>
 					</div>
 					<div className="featuredItem">
-						<img src="https://cf.bstatic.com/xdata/images/city/max500/690334.webp?k=b99df435f06a15a1568ddd5f55d239507c0156985577681ab91274f917af6dbb&o=" alt="" className="featuredImg" />
+						<img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/33/f7/12/caption.jpg?w=700&h=-1&s=1" alt="" className="featuredImg" />
 						<div className="featuredTitles">
 							<h1>Ha noi</h1>
-							<h2>{data[1]} properties</h2>
+							<h2>Hiện có {data[1]} địa điểm</h2>
 						</div>
 					</div>
 					<div className="featuredItem">
-						<img src="https://cf.bstatic.com/xdata/images/city/max500/689422.webp?k=2595c93e7e067b9ba95f90713f80ba6e5fa88a66e6e55600bd27a5128808fdf2&o=" alt="" className="featuredImg" />
+						<img src="https://img.freepik.com/premium-photo/aerial-view-golden-bridge-is-lifted-by-two-giant-hands-two-rows-vietnamese-flags-ba-na-hill-danang-vietnam-travel-landscape-concept_479694-1347.jpg?size=626&ext=jpg&ga=GA1.1.1289487096.1690981427&semt=ais" alt="" className="featuredImg" />
 						<div className="featuredTitles">
 							<h1>Da nang</h1>
-							<h2>{data[2]} properties</h2>
+							<h2>Hiện có {data[2]} địa điểm</h2>
 						</div>
 					</div>
 				</>

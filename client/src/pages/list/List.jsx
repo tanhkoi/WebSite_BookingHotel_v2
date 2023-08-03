@@ -16,7 +16,6 @@ const List = () => {
 	const [options, setOptions] = useState(location.state.options);
 	const [min, setMin] = useState(undefined);
 	const [max, setMax] = useState(undefined);
-
 	const { data, loading, error, reFetch } = useFetch(`/hotels?city=${destination}&min=${min || 0}&max=${max || 999}`);
 
 	const handleClick = () => {
@@ -30,9 +29,9 @@ const List = () => {
 			<div className="listContainer">
 				<div className="listWrapper">
 					<div className="listSearch">
-						<h1 className="lsTitle">Search</h1>
+						<h1 className="lsTitle">Tìm kiếm</h1>
 						<div className="lsItem">
-							<label>Destination</label>
+							<label>Điểm đến</label>
 							<input
 								placeholder={destination}
 								type="text"
@@ -42,16 +41,16 @@ const List = () => {
 							/>
 						</div>
 						<div className="lsItem">
-							<label>Check-in Date</label>
-							<span onClick={() => setOpenDate(!openDate)}>{`${format(dates[0].startDate, 'MM/dd/yyyy')} to ${format(dates[0].endDate, 'MM/dd/yyyy')}`}</span>
+							<label>Ngày nhận phòng</label>
+							<span onClick={() => setOpenDate(!openDate)}>{`${format(dates[0].startDate, 'MM/dd/yyyy')} đến ${format(dates[0].endDate, 'MM/dd/yyyy')}`}</span>
 							{openDate && <DateRange onChange={(item) => setDates([item.selection])} minDate={new Date()} ranges={dates} />}
 						</div>
 						<div className="lsItem">
-							<label>Options</label>
+							<label>Tùy chọn</label>
 							<div className="lsOptions">
 								<div className="lsOptionItem">
 									<span className="lsOptionText">
-										Min price <small>per night</small>
+										Giá tối thiểu <small>mỗi đêm</small>
 									</span>
 									<input
 										type="number"
@@ -63,7 +62,7 @@ const List = () => {
 								</div>
 								<div className="lsOptionItem">
 									<span className="lsOptionText">
-										Max price <small>per night</small>
+										Giá tối đa <small>mỗi đêm</small>
 									</span>
 									<input
 										type="number"
@@ -74,24 +73,24 @@ const List = () => {
 									/>
 								</div>
 								<div className="lsOptionItem">
-									<span className="lsOptionText">Adult</span>
+									<span className="lsOptionText">Người lớn</span>
 									<input type="number" min={1} className="lsOptionInput" placeholder={options.adult} />
 								</div>
 								<div className="lsOptionItem">
-									<span className="lsOptionText">Children</span>
+									<span className="lsOptionText">Trẻ em</span>
 									<input type="number" min={0} className="lsOptionInput" placeholder={options.children} />
 								</div>
 								<div className="lsOptionItem">
-									<span className="lsOptionText">Room</span>
+									<span className="lsOptionText">Phòng</span>
 									<input type="number" min={1} className="lsOptionInput" placeholder={options.room} />
 								</div>
 							</div>
 						</div>
-						<button onClick={handleClick}>Search</button>
+						<button onClick={handleClick}>Tìm kiếm</button>
 					</div>
 					<div className="listResult">
 						{loading ? (
-							'loading'
+							'Đang tải...'
 						) : (
 							<>
 								{data.map((item) => (
